@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalogue name="Perfect Play Songs List">
+  <album>
+    <name>Electronic</name>
+    <artist>Adele</artist>
+    <year>2011</year>
+    <producer>Unknown</producer>
+    <price>18.45</price>
+    <songs>
+      <song>
+        <title>Rolling in the Deep</title>
+        <duration>3:49</duration>
+      </song>
+      <song>
+        <title>Turning tables</title>
+        <duration>4:10</duration>
+      </song>
+      <song>
+        <title>Set fire to the rain</title>
+        <duration>4:01</duration>
+      </song>
+      <song>
+        <title>Someone like you</title>
+        <duration>4:47</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>
