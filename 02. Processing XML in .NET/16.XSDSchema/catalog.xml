@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="catalog.xslt"?>
+<catalogue name="Perfect Play Songs List">
+  <album>
+    <name>Backspacer</name>
+    <artist>Pearl Jam</artist>
+    <year>2009</year>
+    <producer>Sony</producer>
+    <price>25.67</price>
+    <songs>
+      <song>
+        <title>Unthought Known</title>
+        <duration>4:11</duration>
+      </song>
+      <song>
+        <title>Amongst the waves</title>
+        <duration>4:01</duration>
+      </song>
+      <song>
+        <title>Speed of sound</title>
+        <duration>3:36</duration>
+      </song>
+      <song>
+        <title>Force of Nature</title>
+        <duration>4:07</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Litning bolt</name>
+    <artist>Pearl Jam</artist>
+    <year>2013</year>
+    <producer>Sony</producer>
+    <price>27.45</price>
+    <songs>
+      <song>
+        <title>Sirens</title>
+        <duration>5:40</duration>
+      </song>
+      <song>
+        <title>Lightning bolt</title>
+        <duration>4:14</duration>
+      </song>
+      <song>
+        <title>Yellow Moon</title>
+        <duration>3:52</duration>
+      </song>
+      <song>
+        <title>Future Days</title>
+        <duration>4:23</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Electronic</name>
+    <artist>Adele</artist>
+    <year>2011</year>
+    <producer>Unknown</producer>
+    <price>18.45</price>
+    <songs>
+      <song>
+        <title>Rolling in the Deep</title>
+        <duration>3:49</duration>
+      </song>
+      <song>
+        <title>Turning tables</title>
+        <duration>4:10</duration>
+      </song>
+      <song>
+        <title>Set fire to the rain</title>
+        <duration>4:01</duration>
+      </song>
+      <song>
+        <title>Someone like you</title>
+        <duration>4:47</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Rock</name>
+    <artist>Depeche mode</artist>
+    <year>1989</year>
+    <producer>Someone</producer>
+    <price>21.35</price>
+    <songs>
+      <song>
+        <title>Stripped</title>
+        <duration>6:45</duration>
+      </song>
+      <song>
+        <title>Somebody</title>
+        <duration>4:36</duration>
+      </song>
+      <song>
+        <title>Strange love</title>
+        <duration>4:49</duration>
+      </song>
+      <song>
+        <title>Behind the wheel</title>
+        <duration>5:55</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>
