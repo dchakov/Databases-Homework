@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums name="My Albums">
+	<album>
+		<name>Backspacer</name>
+		<artist>Pearl Jam</artist>
+	</album>
+	<album>
+		<name>Litning bolt</name>
+		<artist>Pearl Jam</artist>
+	</album>
+	<album>
+		<name>Electronic</name>
+		<artist>Adele</artist>
+	</album>
+	<album>
+		<name>Rock</name>
+		<artist>Depeche mode</artist>
+	</album>
+</albums>

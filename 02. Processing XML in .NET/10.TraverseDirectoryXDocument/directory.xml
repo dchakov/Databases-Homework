@@ -1,0 +1,1446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directory>
+  <dir name="Databases">
+    <dir name=".git">
+      <dir name="hooks">
+        <file name="applypatch-msg.sample" />
+        <file name="commit-msg.sample" />
+        <file name="post-update.sample" />
+        <file name="pre-applypatch.sample" />
+        <file name="pre-commit.sample" />
+        <file name="pre-push.sample" />
+        <file name="pre-rebase.sample" />
+        <file name="prepare-commit-msg.sample" />
+        <file name="update.sample" />
+      </dir>
+      <dir name="info">
+        <file name="exclude" />
+      </dir>
+      <dir name="logs">
+        <dir name="refs">
+          <dir name="heads">
+            <file name="master" />
+          </dir>
+          <dir name="remotes">
+            <dir name="origin">
+              <file name="HEAD" />
+              <file name="master" />
+            </dir>
+          </dir>
+        </dir>
+        <file name="HEAD" />
+      </dir>
+      <dir name="objects">
+        <dir name="06">
+          <file name="89a24fcb25a808aa87ba0665fb719bd1dc14ce" />
+        </dir>
+        <dir name="08">
+          <file name="8c4ef4fb7bcfd1d2c71c0c8646144bce5132da" />
+        </dir>
+        <dir name="10">
+          <file name="3a324e5ec2d3cc052404ea31283b6012669f3d" />
+        </dir>
+        <dir name="12">
+          <file name="6423f7687c8258a0b7cf49b52d1f29b90b961e" />
+        </dir>
+        <dir name="14">
+          <file name="f3d4ae2501a5a3bbee7ad0a4b98b0688dea50a" />
+        </dir>
+        <dir name="2b">
+          <file name="abf0529f9d3970745a5d71c021dbe550737761" />
+        </dir>
+        <dir name="38">
+          <file name="c6de9f36c928f7536d469f56e951cbea5dec15" />
+        </dir>
+        <dir name="3b">
+          <file name="712e49a2786fdeac3d36c1439ae6d6833844cc" />
+        </dir>
+        <dir name="4a">
+          <file name="451981d002a5cc76948c6e7bb53fe8fde6e528" />
+        </dir>
+        <dir name="57">
+          <file name="f874880799e7341a4236d41383de84840fdc7b" />
+        </dir>
+        <dir name="68">
+          <file name="9943c21837ff198b40575d247accd7af6ac70c" />
+          <file name="e276c853119bc2a2a2ec89621ed7e5e258222b" />
+        </dir>
+        <dir name="6e">
+          <file name="7c286150faea6f416d6769dc57de88bc39cf0e" />
+          <file name="f4ee5d7e57445785662f77f37a8aaa4212b3fb" />
+        </dir>
+        <dir name="74">
+          <file name="04fe3bb4a2538f764f5177401b1a56e8da71cd" />
+        </dir>
+        <dir name="7b">
+          <file name="657654ae66679a0ffc205c39afc19179ee9c5c" />
+        </dir>
+        <dir name="82">
+          <file name="15251088ddd3c15bdf0e43da32990450695244" />
+        </dir>
+        <dir name="84">
+          <file name="997ba362f9dd315a7672c9b47b244dd5e83d87" />
+        </dir>
+        <dir name="87">
+          <file name="8feacce4a4c7e54a607ab0955a930d91ed8829" />
+        </dir>
+        <dir name="8d">
+          <file name="6ef3d3cfd093ca52fbeff2cf77063de5671317" />
+        </dir>
+        <dir name="90">
+          <file name="2e64f5f38658c9779b3193f39437fab04a583e" />
+        </dir>
+        <dir name="94">
+          <file name="e4a89875e30d1c31e5cc475a5755de4600ec62" />
+        </dir>
+        <dir name="9a">
+          <file name="99afa5579e5f1fc48b084db9486233d1f5fe29" />
+        </dir>
+        <dir name="a8">
+          <file name="aca2df759713605297c0d630037361f7570159" />
+          <file name="ec3e7628cdea66b4e83c2a93f4f4de46b0b939" />
+        </dir>
+        <dir name="c8">
+          <file name="41cecebcb161c531416b1cf5dd20289da3ed03" />
+          <file name="ff22c0d8bd12563c38ef7d7b377614c5d61251" />
+        </dir>
+        <dir name="cd">
+          <file name="979ec8028645a0af055dc6dd1fb7935068af4e" />
+        </dir>
+        <dir name="da">
+          <file name="f72348f10aa8572454ec1c5e4e0b61d5a75b28" />
+        </dir>
+        <dir name="e8">
+          <file name="58154ea4ae270fbc38e5daf33aa01f66331296" />
+        </dir>
+        <dir name="ea">
+          <file name="8277b543daaee32ad4e1d23c34514477274f5a" />
+        </dir>
+        <dir name="ed">
+          <file name="31fe1f2ea59fbb53b5578d0eb59e8cd490e715" />
+        </dir>
+        <dir name="f5">
+          <file name="f4af0ba1a27046d6b8b94e70c32991f6b96d38" />
+        </dir>
+        <dir name="fd">
+          <file name="351b61443ee0efe2abb3b7634dba4f56ca973a" />
+        </dir>
+        <dir name="info" />
+        <dir name="pack">
+          <file name="pack-b79e7f5518d22df30dceac1c930539fe75d6d8f5.idx" />
+          <file name="pack-b79e7f5518d22df30dceac1c930539fe75d6d8f5.pack" />
+          <file name="pack-c16c571c998ca6ad1329646a27dab91c96beffe7.idx" />
+          <file name="pack-c16c571c998ca6ad1329646a27dab91c96beffe7.pack" />
+        </dir>
+      </dir>
+      <dir name="refs">
+        <dir name="heads">
+          <file name="master" />
+        </dir>
+        <dir name="remotes">
+          <dir name="origin">
+            <file name="HEAD" />
+            <file name="master" />
+          </dir>
+        </dir>
+        <dir name="tags" />
+      </dir>
+      <file name="config" />
+      <file name="description" />
+      <file name="FETCH_HEAD" />
+      <file name="HEAD" />
+      <file name="index" />
+      <file name="ORIG_HEAD" />
+      <file name="packed-refs" />
+    </dir>
+    <dir name="00. Databases - Course Introduction">
+      <dir name="Slides">
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="01. XML Basics">
+      <dir name="Demo">
+        <file name="items.xml" />
+        <file name="library-invalid.xml" />
+        <file name="library-valid.xml" />
+        <file name="library-xml2html.xsl" />
+        <file name="library.xml" />
+        <file name="library.xsd" />
+        <file name="order.xsd" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="dom-parser.png" />
+          <file name="vs-schema-editor.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+      <file name="TODO.txt" />
+    </dir>
+    <dir name="02. Processing XML in .NET">
+      <dir name="Demo">
+        <dir name=".vs">
+          <dir name="XML-Parsing-Demos">
+            <dir name="v14">
+              <file name=".suo" />
+            </dir>
+          </dir>
+        </dir>
+        <dir name="CreatingDocumentLINQToXML">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="CreatingDocumentLINQToXML.vshost.exe" />
+              <file name="CreatingDocumentLINQToXML.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="6. CreatingDocs-LINQ-to-XML.csproj" />
+          <file name="6. CreatingDocs-LINQ-to-XML.csproj.user" />
+          <file name="books.xml" />
+          <file name="LINQToXML.cs" />
+        </dir>
+        <dir name="DOMParser">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="DOMParser.exe" />
+              <file name="DOMParser.pdb" />
+              <file name="DOMParser.vshost.exe" />
+              <file name="DOMParser.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="1. DOM-Parser.csproj.FileListAbsolute.txt" />
+              <file name="1. DOM-Parser.csprojResolveAssemblyReference.cache" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+              <file name="DOMParser.exe" />
+              <file name="DOMParser.pdb" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="1. DOM-Parser.csproj" />
+          <file name="DOMParser.cs" />
+          <file name="library.xml" />
+        </dir>
+        <dir name="LINQNamespaces">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="LINQNamespaces.vshost.exe" />
+              <file name="LINQNamespaces.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="8. LINQ-Namespaces.csproj" />
+          <file name="books.xml" />
+          <file name="LINQtoXMLNamespaces.cs" />
+        </dir>
+        <dir name="Modifing-XML-With-DOM">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="Modifing-XML-With-DOM.vshost.exe" />
+              <file name="Modifing-XML-With-DOM.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="2. Modifing-XML-With-DOM.csproj" />
+          <file name="items.xml" />
+          <file name="itemsNew.xml" />
+          <file name="ModifyXMLwithDOM.cs" />
+        </dir>
+        <dir name="SearchingWithLINQ">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="SearchingWithLINQ.exe" />
+              <file name="SearchingWithLINQ.pdb" />
+              <file name="SearchingWithLINQ.vshost.exe" />
+              <file name="SearchingWithLINQ.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="9. Searching-with-LINQ.csproj.FileListAbsolute.txt" />
+              <file name="9. Searching-with-LINQ.csprojResolveAssemblyReference.cache" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+              <file name="SearchingWithLINQ.exe" />
+              <file name="SearchingWithLINQ.pdb" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="9. Searching-with-LINQ.csproj" />
+          <file name="books.xml" />
+          <file name="SearchingWithLINQ.cs" />
+        </dir>
+        <dir name="XMLReader">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="XMLReader.vshost.exe" />
+              <file name="XMLReader.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="3. XmlReader-Demo.csproj" />
+          <file name="3. XmlReader-Demo.csproj.user" />
+          <file name="library.xml" />
+          <file name="XmlReaderDemo.cs" />
+        </dir>
+        <dir name="XMLWriter">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="XMLWriter.vshost.exe" />
+              <file name="XMLWriter.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="4. XmlWriter-Demo.csproj" />
+          <file name="books.xml" />
+          <file name="XmlWriterDemo.cs" />
+        </dir>
+        <dir name="XPathDemo">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="XPathDemo.exe" />
+              <file name="XPathDemo.pdb" />
+              <file name="XPathDemo.vshost.exe" />
+              <file name="XPathDemo.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="5. XPath-Demo.csproj.FileListAbsolute.txt" />
+              <file name="5. XPath-Demo.csprojResolveAssemblyReference.cache" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+              <file name="XPathDemo.exe" />
+              <file name="XPathDemo.pdb" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="5. XPath-Demo.csproj" />
+          <file name="items.xml" />
+          <file name="XPathDemo.cs" />
+        </dir>
+        <dir name="XPathNavigatorDemo">
+          <file name="06. XPathNavigator-Demo.csproj" />
+          <file name="items.xml" />
+          <file name="itemsNew.xml" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="XSL Transform">
+          <dir name="bin">
+            <dir name="Debug">
+              <file name="XSL Transform.vshost.exe" />
+              <file name="XSL Transform.vshost.exe.manifest" />
+            </dir>
+          </dir>
+          <dir name="obj">
+            <dir name="Debug">
+              <dir name="TempPE" />
+              <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+            </dir>
+          </dir>
+          <dir name="Properties" />
+          <file name="9. XSL-Transformations.csproj" />
+          <file name="catalog.html" />
+          <file name="catalog.xml" />
+          <file name="catalog.xsl" />
+          <file name="XSLTransform.cs" />
+        </dir>
+        <file name="XML-Parsing-Demos.sln" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="dom-parser.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+      <file name="TODO.txt" />
+    </dir>
+    <dir name="03. Processing-JSON-in-.NET">
+      <dir name="Demo">
+        <dir name=".nuget">
+          <file name="NuGet.Config" />
+          <file name="NuGet.exe" />
+          <file name="NuGet.targets" />
+        </dir>
+        <dir name="BuiltInJsonSerializers">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="1. BuiltInJsonSerializers.csproj" />
+          <file name="App.config" />
+          <file name="packages.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="ConfiguringJSON.NET">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="4. ConfiguringJSON.NET.csproj" />
+          <file name="App.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="ControllingTheParsing">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="5. ControllingTheParsing.csproj" />
+          <file name="App.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="DemoModels">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="Category.cs" />
+          <file name="DemoModels.csproj" />
+          <file name="Location.cs" />
+          <file name="Place.cs" />
+          <file name="User.cs" />
+        </dir>
+        <dir name="Extensions">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="Extensions.cs" />
+          <file name="Extensions.csproj" />
+        </dir>
+        <dir name="JavaScriptSerializerFeatures">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="2. JavaScriptSerializerFeatures.csproj" />
+          <file name="App.cs" />
+        </dir>
+        <dir name="LinqToJson">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="6. LinqToJson.csproj" />
+          <file name="App.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="Services">
+          <dir name="Client">
+            <dir name="Client">
+              <dir name="Properties">
+                <file name="AssemblyInfo.cs" />
+              </dir>
+              <file name="App.config" />
+              <file name="Client.csproj" />
+              <file name="JsonRequester.cs" />
+              <file name="packages.config" />
+              <file name="Program.cs" />
+            </dir>
+            <file name="Client.sln" />
+          </dir>
+          <dir name="Server">
+            <file name="app.js" />
+            <file name="data.json" />
+            <file name="id-generator.js" />
+            <file name="package.json" />
+          </dir>
+          <file name="data.json" />
+        </dir>
+        <dir name="WorkingWithJSON.NET">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="3. WorkingWithJSON.NET.csproj" />
+          <file name="App.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="XMLtoJSON">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="7. XMLtoJSON.csproj" />
+          <file name="App.config" />
+          <file name="data.xml" />
+          <file name="Program.cs" />
+        </dir>
+        <file name="ProcessingJSONinDotNet.sln" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+    </dir>
+    <dir name="04. Database Systems - Overview">
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="arrow.png" />
+          <file name="countries-table.png" />
+          <file name="document-model.png" />
+          <file name="er-diagram.png" />
+          <file name="erwin-diagram.png" />
+          <file name="fabforce-diagram.png" />
+          <file name="many-to-many-ralation.png" />
+          <file name="msvisio-diagram.png" />
+          <file name="normalized.png" />
+          <file name="not-normalized.png" />
+          <file name="one-to-many-ralation.png" />
+          <file name="one-to-one-ralation.png" />
+          <file name="relational-model.png" />
+          <file name="self-relation.png" />
+          <file name="towns-table.png" />
+          <file name="transaction-lifecycle.png" />
+          <file name="tree-structure.png" />
+          <file name="views.png" />
+          <file name="views2.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="05. SQL Server and MySQL - Introduction">
+      <dir name="Demo">
+        <file name="install_northwind.sql" />
+        <file name="install_pubs.sql" />
+        <file name="Northwind.mdf" />
+        <file name="Northwind_log.ldf" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="backup-restore.png" />
+          <file name="database-types.png" />
+          <file name="execute-sql.png" />
+          <file name="management-studio.png" />
+          <file name="mysql-task.png" />
+          <file name="new-login.png" />
+          <file name="php-my-admin.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="06. Database Modeling">
+      <dir name="Homework">
+        <dir name="imgs">
+          <file name="diagram.png" />
+        </dir>
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="create-relations.png" />
+          <file name="create-table.png" />
+          <file name="create-table2.png" />
+          <file name="create-table3.png" />
+          <file name="create-table4.png" />
+          <file name="create-table5.png" />
+          <file name="create-table6.png" />
+          <file name="data-types.png" />
+          <file name="new-database.png" />
+          <file name="new-database2.png" />
+          <file name="new-diagram.png" />
+          <file name="self-relation.png" />
+          <file name="sql-connect.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="07. Intro to SQL">
+      <dir name="Demo">
+        <file name="Create-TelerikAcademy-Database-SQL-Script.sql" />
+        <file name="Introduction-to-SQL-demos.txt" />
+        <file name="MySQL-demos.txt" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="additional-cond.png" />
+          <file name="arithmetic-ops.png" />
+          <file name="cartesian.png" />
+          <file name="col-alias.png" />
+          <file name="communicating-with-db.png" />
+          <file name="complex-join-cond.png" />
+          <file name="concat.png" />
+          <file name="cross-join.png" />
+          <file name="dep-all.png" />
+          <file name="dep-dist.png" />
+          <file name="full-outer-join.png" />
+          <file name="inner-join.png" />
+          <file name="inner-join2.png" />
+          <file name="join-types.png" />
+          <file name="left-outer-join.png" />
+          <file name="literal.png" />
+          <file name="multiple.png" />
+          <file name="null-value.png" />
+          <file name="order-by.png" />
+          <file name="right-outer-join.png" />
+          <file name="schema.png" />
+          <file name="select-all-dep.png" />
+          <file name="select-apple.png" />
+          <file name="select-name-dep.png" />
+          <file name="self-join.png" />
+          <file name="sql-select.png" />
+          <file name="three-way-join.png" />
+          <file name="union.png" />
+          <file name="where.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="08. Advanced SQL">
+      <dir name="Demo">
+        <file name="Introduction-to-SQL-Part-II-Demos.txt" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="avg-sum.png" />
+          <file name="coalesce.png" />
+          <file name="combine.png" />
+          <file name="count-all.png" />
+          <file name="count-expr.png" />
+          <file name="cross.png" />
+          <file name="gfuncs-nested.png" />
+          <file name="group-and-null.png" />
+          <file name="group-funcs.png" />
+          <file name="group-having.png" />
+          <file name="group-join.png" />
+          <file name="group-sev-cols.png" />
+          <file name="groups-of-data.png" />
+          <file name="min-max.png" />
+          <file name="string-funcs.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="09. Transact-SQL">
+      <dir name="Demo">
+        <file name="Install-Northwind.sql" />
+        <file name="Transact-SQL-Demos.sql" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="10. ADO.NET">
+      <dir name="Demo">
+        <dir name="5. MySQL">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="5. MySQL.csproj" />
+          <file name="App.config" />
+          <file name="packages.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="AppConfigDemo">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="App.config" />
+          <file name="AppConfigDemo.csproj" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="Command-and-DataReader">
+          <file name="1. Command-and-DataReader.csproj" />
+          <file name="CommandAndDataReader.cs" />
+        </dir>
+        <dir name="Dates">
+          <file name="6. Working-with-Dates.csproj" />
+          <file name="WorkingWithDates.cs" />
+        </dir>
+        <dir name="Images">
+          <file name="7. Working-with-Images.csproj" />
+          <file name="Create-Images-Database-Script.sql" />
+          <file name="ImagesInDBDemo.cs" />
+          <file name="logo.gif" />
+        </dir>
+        <dir name="MS-Access">
+          <file name="4. MS-Access.csproj" />
+          <file name="Library.mdb" />
+          <file name="OleDbConnectionDemo.cs" />
+        </dir>
+        <dir name="SQL-Injection-Demo">
+          <file name="2. SQL-Injection-Demo.csproj" />
+          <file name="SqlInjectionDemo.cs" />
+        </dir>
+        <dir name="SqlParameters">
+          <file name="3. SQL-Parameters-Demo.csproj" />
+          <file name="app.config" />
+          <file name="Project.cs" />
+          <file name="Settings.Designer.cs" />
+          <file name="Settings.settings" />
+          <file name="SqlParametersExample.cs" />
+        </dir>
+        <file name="ADO.NET-Demos.sln" />
+        <file name="Create-TelerikAcademy-Database-SQL-Script.sql" />
+      </dir>
+      <dir name="Homework">
+        <dir name="imgs">
+          <file name="excel.png" />
+        </dir>
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="ado-architecture.png" />
+          <file name="ado-classes.png" />
+          <file name="ado-components.png" />
+          <file name="ado-connected-model.png" />
+          <file name="ado-disconnected-model.png" />
+          <file name="connected-model-classes.png" />
+          <file name="connected-model.png" />
+          <file name="disconnected-model.png" />
+          <file name="entity-framework.png" />
+          <file name="linq-to-sql.png" />
+          <file name="oledb.png" />
+          <file name="orm-model.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="11. Entity Framework">
+      <dir name="Demo">
+        <dir name="AttachDetachEntities">
+          <file name="6. AttachDetachEntities.csproj" />
+          <file name="App.Config" />
+          <file name="AttachDetachEntities.cs" />
+          <file name="packages.config" />
+        </dir>
+        <dir name="ExecuteSQLQuery">
+          <file name="4. ExecuteSQLNativeQuery.csproj" />
+          <file name="App.Config" />
+          <file name="ExecutingSQLQueriesExample.cs" />
+          <file name="packages.config" />
+        </dir>
+        <dir name="JoinAndGroupDemo">
+          <file name="5. JoinAndGroupDemo.csproj" />
+          <file name="App.Config" />
+          <file name="JoinAndGroupExample.cs" />
+          <file name="packages.config" />
+        </dir>
+        <dir name="ReadingWithLINQToEntities">
+          <file name="2. ReadingWithLINQToEntities.csproj" />
+          <file name="App.Config" />
+          <file name="packages.config" />
+          <file name="ReadingWithLINQToEntities.cs" />
+        </dir>
+        <dir name="UpdatingDeletingInsertingData">
+          <file name="3. UpdatingDeletingInsertingData.csproj" />
+          <file name="App.Config" />
+          <file name="packages.config" />
+          <file name="UpdatingDeletingInsertingData.cs" />
+        </dir>
+        <dir name="UsingEntityFrameworkModel">
+          <file name="1. UsingEntityFrameworkModel.csproj" />
+          <file name="Alphabetical_list_of_product.cs" />
+          <file name="App.Config" />
+          <file name="Category.cs" />
+          <file name="Category_Sales_for_1997.cs" />
+          <file name="Current_Product_List.cs" />
+          <file name="Customer.cs" />
+          <file name="CustomerDemographic.cs" />
+          <file name="Customer_and_Suppliers_by_City.cs" />
+          <file name="CustOrderHist_Result.cs" />
+          <file name="CustOrdersDetail_Result.cs" />
+          <file name="CustOrdersOrders_Result.cs" />
+          <file name="Employee.cs" />
+          <file name="Employee_Sales_by_Country_Result.cs" />
+          <file name="Extender.cs" />
+          <file name="Invoice.cs" />
+          <file name="Logger.cs" />
+          <file name="NorthwindModel.Context.cs" />
+          <file name="NorthwindModel.Context.tt" />
+          <file name="NorthwindModel.cs" />
+          <file name="NorthwindModel.Designer.cs" />
+          <file name="NorthwindModel.edmx" />
+          <file name="NorthwindModel.edmx.diagram" />
+          <file name="NorthwindModel.tt" />
+          <file name="Order.cs" />
+          <file name="Orders_Qry.cs" />
+          <file name="Order_Detail.cs" />
+          <file name="Order_Details_Extended.cs" />
+          <file name="Order_Subtotal.cs" />
+          <file name="packages.config" />
+          <file name="Product.cs" />
+          <file name="Products_Above_Average_Price.cs" />
+          <file name="Products_by_Category.cs" />
+          <file name="Product_Sales_for_1997.cs" />
+          <file name="Region.cs" />
+          <file name="SalesByCategory_Result.cs" />
+          <file name="Sales_by_Category.cs" />
+          <file name="Sales_by_Year_Result.cs" />
+          <file name="Sales_Totals_by_Amount.cs" />
+          <file name="Shipper.cs" />
+          <file name="sp_helpdiagramdefinition_Result.cs" />
+          <file name="sp_helpdiagrams_Result.cs" />
+          <file name="Summary_of_Sales_by_Quarter.cs" />
+          <file name="Summary_of_Sales_by_Year.cs" />
+          <file name="Supplier.cs" />
+          <file name="sysdiagram.cs" />
+          <file name="Ten_Most_Expensive_Products_Result.cs" />
+          <file name="Territory.cs" />
+        </dir>
+        <file name="Entity-Framework-Demos.sln" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="basic-workflow.png" />
+          <file name="basic-workflow2.png" />
+          <file name="ef-metadata.png" />
+          <file name="orm-mapping.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="12. Entity Framework Performance">
+      <dir name="Demo">
+        <dir name="Solving-ToList-Problem">
+          <file name="2. Solving-ToList-Problem.csproj" />
+          <file name="App.Config" />
+          <file name="Category.cs" />
+          <file name="Customer.cs" />
+          <file name="Northwind.Context.cs" />
+          <file name="Northwind.Context.tt" />
+          <file name="Northwind.cs" />
+          <file name="Northwind.Designer.cs" />
+          <file name="Northwind.edmx" />
+          <file name="Northwind.edmx.diagram" />
+          <file name="Northwind.tt" />
+          <file name="Order.cs" />
+          <file name="Order_Detail.cs" />
+          <file name="packages.config" />
+          <file name="Product.cs" />
+          <file name="Shipper.cs" />
+          <file name="SolvingToListProblem.cs" />
+          <file name="Supplier.cs" />
+        </dir>
+        <dir name="SolvingTheNplus1QueryProblem">
+          <file name="1. SolvingTheN+1QueryProblem.csproj" />
+          <file name="App.Config" />
+          <file name="Category.cs" />
+          <file name="Northwind.Context.cs" />
+          <file name="Northwind.Context.tt" />
+          <file name="Northwind.cs" />
+          <file name="Northwind.Designer.cs" />
+          <file name="Northwind.edmx" />
+          <file name="Northwind.edmx.diagram" />
+          <file name="Northwind.tt" />
+          <file name="packages.config" />
+          <file name="Product.cs" />
+          <file name="SolvingTheNplus1QueryProblem.cs" />
+          <file name="Supplier.cs" />
+        </dir>
+        <file name="Entity-Framework-Performance.sln" />
+        <file name="ExpressProfiler.exe" />
+      </dir>
+      <file name="TODO.txt" />
+    </dir>
+    <dir name="13. Entity Framework Code First">
+      <dir name="Demo">
+        <dir name="CodeFirst.Client">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="App.config" />
+          <file name="CodeFirst.Client.csproj" />
+          <file name="packages.config" />
+          <file name="Program.cs" />
+          <file name="Settings.StyleCop" />
+        </dir>
+        <dir name="CodeFirst.Data">
+          <dir name="Migrations">
+            <file name="Configuration.cs" />
+          </dir>
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="App.config" />
+          <file name="CodeFirst.Data.csproj" />
+          <file name="ForumContext.cs" />
+          <file name="packages.config" />
+          <file name="Settings.StyleCop" />
+          <file name="TagMappings.cs" />
+        </dir>
+        <dir name="CodeFirst.Models">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="Category.cs" />
+          <file name="CodeFirst.Models.csproj" />
+          <file name="Post.cs" />
+          <file name="PostAnswer.cs" />
+          <file name="PostType.cs" />
+          <file name="Settings.StyleCop" />
+          <file name="Tag.cs" />
+        </dir>
+        <file name="Entity-Framework-Code-First-Demos.sln" />
+      </dir>
+      <dir name="Homework">
+        <file name="README.md" />
+      </dir>
+      <dir name="Slides">
+        <dir name="imgs">
+          <file name="code-first-workflow.png" />
+          <file name="db-connection-workflow.png" />
+          <file name="db-first-workflow.png" />
+          <file name="dbset.png" />
+          <file name="demo-models.png" />
+          <file name="exception.png" />
+          <file name="model-first-workflow.png" />
+        </dir>
+        <file name="index.html" />
+        <file name="open.js" />
+        <file name="package.json" />
+        <file name="README.md" />
+      </dir>
+      <dir name="StudentSystem">
+        <dir name=".nuget">
+          <file name="NuGet.Config" />
+          <file name="NuGet.exe" />
+          <file name="NuGet.targets" />
+        </dir>
+        <dir name="StudentSystem.ConsoleClient">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="App.config" />
+          <file name="ConsoleClient.cs" />
+          <file name="packages.config" />
+          <file name="StudentSystem.ConsoleClient.csproj" />
+        </dir>
+        <dir name="StudentSystem.Data">
+          <dir name="Migrations">
+            <file name="Configuration.cs" />
+          </dir>
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <dir name="Repositories">
+            <file name="GenericRepository.cs" />
+            <file name="IGenericRepository.cs" />
+            <file name="StudentsRepository.cs" />
+          </dir>
+          <file name="App.config" />
+          <file name="IStudentSystemData.cs" />
+          <file name="IStudentSystemDbContext.cs" />
+          <file name="packages.config" />
+          <file name="StudentsSystemData.cs" />
+          <file name="StudentSystem.Data.csproj" />
+          <file name="StudentSystemDbContext.cs" />
+        </dir>
+        <dir name="StudentSystem.Models">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="App.config" />
+          <file name="Course.cs" />
+          <file name="Homework.cs" />
+          <file name="packages.config" />
+          <file name="Student.cs" />
+          <file name="StudentInfo.cs" />
+          <file name="StudentSystem.Models.csproj" />
+          <file name="Test.cs" />
+        </dir>
+        <dir name="StudentSystem.Web">
+          <dir name="App_Data">
+            <file name="StudentSystemConnection.mdf" />
+            <file name="StudentSystemConnection_log.ldf" />
+          </dir>
+          <dir name="App_Start">
+            <file name="BundleConfig.cs" />
+            <file name="FilterConfig.cs" />
+            <file name="RouteConfig.cs" />
+          </dir>
+          <dir name="Content">
+            <file name="bootstrap.css" />
+            <file name="bootstrap.min.css" />
+            <file name="Site.css" />
+          </dir>
+          <dir name="Controllers">
+            <file name="HomeController.cs" />
+          </dir>
+          <dir name="fonts">
+            <file name="glyphicons-halflings-regular.eot" />
+            <file name="glyphicons-halflings-regular.svg" />
+            <file name="glyphicons-halflings-regular.ttf" />
+            <file name="glyphicons-halflings-regular.woff" />
+          </dir>
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <dir name="Scripts">
+            <file name="bootstrap.js" />
+            <file name="bootstrap.min.js" />
+            <file name="jquery-1.10.2.intellisense.js" />
+            <file name="jquery-1.10.2.js" />
+            <file name="jquery-1.10.2.min.js" />
+            <file name="jquery-1.10.2.min.map" />
+            <file name="modernizr-2.6.2.js" />
+            <file name="respond.js" />
+            <file name="respond.min.js" />
+            <file name="_references.js" />
+          </dir>
+          <dir name="Views">
+            <dir name="Home">
+              <file name="About.cshtml" />
+              <file name="Contact.cshtml" />
+              <file name="Index.cshtml" />
+            </dir>
+            <dir name="Shared">
+              <file name="Error.cshtml" />
+              <file name="_Layout.cshtml" />
+            </dir>
+            <file name="Web.config" />
+            <file name="_ViewStart.cshtml" />
+          </dir>
+          <file name="favicon.ico" />
+          <file name="Global.asax" />
+          <file name="Global.asax.cs" />
+          <file name="packages.config" />
+          <file name="Project_Readme.html" />
+          <file name="StudentSystem.Web.csproj" />
+          <file name="Web.config" />
+          <file name="Web.Debug.config" />
+          <file name="Web.Release.config" />
+        </dir>
+        <file name="StudentSystem.jmconfig" />
+        <file name="StudentSystem.sln" />
+      </dir>
+      <file name="README.md" />
+    </dir>
+    <dir name="14. Database Performance">
+      <dir name="Demo">
+        <file name="Database-Performance-for-Developers-Demos.sql" />
+      </dir>
+    </dir>
+    <dir name="15. Database-Transactions-Concepts">
+      <dir name="Demo">
+        <file name="Transactions-and-Isolation-Demos.doc" />
+        <file name="Transfer-Funds-Demo.sql" />
+      </dir>
+    </dir>
+    <dir name="16. Database-Transactions-with-EF">
+      <dir name="Demo">
+        <dir name="Transaction-Scope">
+          <file name="2. Transaction-Scope.csproj" />
+          <file name="TransactionScopeExample.cs" />
+        </dir>
+        <dir name="Transactions-ADO.NET">
+          <file name="1. Transactions-ADO.NET.csproj" />
+          <file name="TransactionsExample.cs" />
+        </dir>
+        <dir name="Transactions-in-EF">
+          <file name="3. Transactions-in-EF.csproj" />
+          <file name="App.Config" />
+          <file name="Northwind.Designer.cs" />
+          <file name="Northwind.edmx" />
+          <file name="NorthwindTransactions.cs" />
+        </dir>
+        <file name="Transactions-Demos.sln" />
+      </dir>
+      <file name="TODO.txt" />
+    </dir>
+    <dir name="18. MongoDB-and-MongoDB-with-.NET">
+      <dir name="Demo">
+        <dir name="ConnectingToMongoDb">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="1. ConnectingToMongoDb.csproj" />
+          <file name="App.config" />
+          <file name="packages.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="CrudOperations">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="2. CrudOperations.csproj" />
+          <file name="App.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="ExtensionsMethods">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="Extensions.cs" />
+          <file name="ExtensionsMethods.csproj" />
+        </dir>
+        <dir name="LinqLikeQueries">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="4. LinqLikeQueries.csproj" />
+          <file name="App.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="LinqToMongoDB">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="5. LinqToMongoDB.csproj" />
+          <file name="App.config" />
+          <file name="Program.cs" />
+        </dir>
+        <dir name="NativelikeMongoDBQueries">
+          <dir name="Properties">
+            <file name="AssemblyInfo.cs" />
+          </dir>
+          <file name="3. NativelikeMongoDBQueries.csproj" />
+          <file name="App.config" />
+          <file name="Program.cs" />
+        </dir>
+        <file name="MongoDBAndMongoDBWithDotNETDemos.sln" />
+      </dir>
+    </dir>
+    <dir name="19. Redis-and-Redis-with-.NET">
+      <dir name="Demo">
+        <dir name="RedisAndRedisWithDotNet">
+          <dir name="Demo.Models">
+            <dir name="Properties">
+              <file name="AssemblyInfo.cs" />
+            </dir>
+            <file name="Demo.Models.csproj" />
+            <file name="Todo.cs" />
+            <file name="User.cs" />
+          </dir>
+          <dir name="Extensions">
+            <dir name="Properties">
+              <file name="AssemblyInfo.cs" />
+            </dir>
+            <file name="Extensions (Minkov-pc's conflicted copy 2014-09-02).cs" />
+            <file name="Extensions.cs" />
+            <file name="Extensions.csproj" />
+          </dir>
+          <dir name="RedisAndDotNet">
+            <dir name="Properties">
+              <file name="AssemblyInfo.cs" />
+            </dir>
+            <file name="1. RedisAndDotNet.csproj" />
+            <file name="App.config" />
+            <file name="packages.config" />
+            <file name="Program.cs" />
+          </dir>
+          <dir name="RedisClients">
+            <dir name="Properties">
+              <file name="AssemblyInfo.cs" />
+            </dir>
+            <file name="2. RedisClients.csproj" />
+            <file name="App.config" />
+            <file name="packages.config" />
+            <file name="Program (Minkov-pc's conflicted copy 2014-09-02).cs" />
+            <file name="Program.cs" />
+          </dir>
+          <file name="RedisAndRedisWithDotNet.sln" />
+        </dir>
+      </dir>
+    </dir>
+    <dir name="21. Databases Team Work Project">
+      <dir name="2014">
+        <dir name="Sample-Sales-Reports">
+          <dir name="20-Jul-2013">
+            <file name="Bourgas-Plaza-Sales-Report-20-Jul-2013.xls" />
+            <file name="Kaspichan-Center-Sales-Report-20-Jul-2013.xls" />
+            <file name="Zmeyovo-Sales-Report-20-Jul-2013.xls" />
+          </dir>
+          <dir name="21-Jul-2013">
+            <file name="Bourgas-Plaza-Sales-Report-21-Jul-2013.xls" />
+            <file name="Kaspichan-Center-Sales-Report-21-Jul-2013.xls" />
+            <file name="Plovdiv-Stolipinovo-Sales-Report-21-Jul-2013.xls" />
+            <file name="Zmeyovo-Sales-Report-21-Jul-2013.xls" />
+          </dir>
+          <dir name="22-Jul-2013">
+            <file name="Bourgas-Plaza-Sales-Report-22-Jul-2013.xls" />
+            <file name="Kaspichan-Center-Sales-Report-22-Jul-2013.xls" />
+            <file name="Plovdiv-Stolipinovo-Sales-Report-22-Jul-2013.xls" />
+          </dir>
+        </dir>
+        <file name="Databases-Teamwork-Practical-Project-2014.docx" />
+        <file name="Sample-Aggregated-Sales-Report.pdf" />
+        <file name="Sample-Vendors-Expenses.xml" />
+      </dir>
+      <dir name="2015">
+        <dir name="Sample-Sales-Reports">
+          <dir name="Sample-Sales-Reports">
+            <dir name="20-Jul-2013">
+              <file name="Bourgas-Plaza-Sales-Report-20-Jul-2013.xls" />
+              <file name="Kaspichan-Center-Sales-Report-20-Jul-2013.xls" />
+              <file name="Zmeyovo-Sales-Report-20-Jul-2013.xls" />
+            </dir>
+            <dir name="21-Jul-2013">
+              <file name="Bourgas-Plaza-Sales-Report-21-Jul-2013.xls" />
+              <file name="Kaspichan-Center-Sales-Report-21-Jul-2013.xls" />
+              <file name="Plovdiv-Stolipinovo-Sales-Report-21-Jul-2013.xls" />
+              <file name="Zmeyovo-Sales-Report-21-Jul-2013.xls" />
+            </dir>
+            <dir name="22-Jul-2013">
+              <file name="Bourgas-Plaza-Sales-Report-22-Jul-2013.xls" />
+              <file name="Kaspichan-Center-Sales-Report-22-Jul-2013.xls" />
+              <file name="Plovdiv-Stolipinovo-Sales-Report-22-Jul-2013.xls" />
+            </dir>
+          </dir>
+        </dir>
+        <file name="README.md" />
+        <file name="Sample-Aggregated-Sales-Report.pdf" />
+        <file name="Sample-Sales-Reports.zip" />
+        <file name="Sample-Vendors-Expenses.xml" />
+      </dir>
+    </dir>
+    <dir name="22. Exam">
+      <dir name="2013">
+        <file name="Databases-Practical-Exam-September-2013.docx" />
+      </dir>
+      <dir name="2014">
+        <dir name="Author-Solution">
+          <dir name="Problem 1 - Database First">
+            <file name="company-with-data.bak" />
+            <file name="Create-Database-Script.sql" />
+            <file name="Diagram.png" />
+          </dir>
+          <dir name="Problem 2 - Sample Data">
+            <dir name="Company.Data">
+              <dir name="Properties">
+                <file name="AssemblyInfo.cs" />
+              </dir>
+              <file name="App.Config" />
+              <file name="Company.Data.csproj" />
+              <file name="CompanyEntities.Context.cs" />
+              <file name="CompanyEntities.Context.tt" />
+              <file name="CompanyEntities.cs" />
+              <file name="CompanyEntities.Designer.cs" />
+              <file name="CompanyEntities.edmx" />
+              <file name="CompanyEntities.edmx.diagram" />
+              <file name="CompanyEntities.tt" />
+              <file name="Department.cs" />
+              <file name="Employee.cs" />
+              <file name="EmployeesInProject.cs" />
+              <file name="packages.config" />
+              <file name="Project.cs" />
+              <file name="Report.cs" />
+              <file name="Settings.StyleCop" />
+            </dir>
+            <dir name="Company.DataGenerator">
+              <dir name="Properties">
+                <file name="AssemblyInfo.cs" />
+              </dir>
+              <file name="App.config" />
+              <file name="Company.DataGenerator.csproj" />
+              <file name="DataGeneratorExecutor.cs" />
+              <file name="DepartmentDataGenerator.cs" />
+              <file name="EmployeeDataGenerator.cs" />
+              <file name="EmployeesInProjectsDataGenerator.cs" />
+              <file name="IDataGenerator.cs" />
+              <file name="IRandomGenerator.cs" />
+              <file name="packages.config" />
+              <file name="Program.cs" />
+              <file name="ProjectsDataGenerator.cs" />
+              <file name="RandomGenerator.cs" />
+              <file name="ReportsDataGenerator.cs" />
+              <file name="Settings.StyleCop" />
+            </dir>
+            <file name="Company.sln" />
+          </dir>
+          <dir name="Problem 3 - SQL Queries">
+            <file name="Query1.sql" />
+            <file name="Query2.sql" />
+            <file name="Query3.sql" />
+          </dir>
+          <dir name="Problem 4 - Performance Tuning">
+            <file name="Query3Cache.sql" />
+          </dir>
+          <dir name="Problem 5 Database Backup">
+            <file name="cars-with-data.bak" />
+          </dir>
+          <dir name="Problem 5, 6 and 7 Code">
+            <dir name="Cars.Data">
+              <dir name="Migrations">
+                <file name="Configuration.cs" />
+              </dir>
+              <dir name="Properties">
+                <file name="AssemblyInfo.cs" />
+              </dir>
+              <file name="App.config" />
+              <file name="Cars.Data.csproj" />
+              <file name="CarsDbContext.cs" />
+              <file name="packages.config" />
+              <file name="Settings.StyleCop" />
+            </dir>
+            <dir name="Cars.Importer">
+              <dir name="GeneratingJsonFiles">
+                <file name="IJsonFilesGenerator.cs" />
+                <file name="IRandomGenerator.cs" />
+                <file name="JsonFilesGenerator.cs" />
+                <file name="RandomGenerator.cs" />
+              </dir>
+              <dir name="Models">
+                <file name="Car.cs" />
+                <file name="Dealer.cs" />
+              </dir>
+              <dir name="Properties">
+                <file name="AssemblyInfo.cs" />
+              </dir>
+              <file name="App.config" />
+              <file name="Cars.Importer.csproj" />
+              <file name="packages.config" />
+              <file name="Program.cs" />
+              <file name="Settings.StyleCop" />
+            </dir>
+            <dir name="Cars.Models">
+              <dir name="Properties">
+                <file name="AssemblyInfo.cs" />
+              </dir>
+              <file name="App.config" />
+              <file name="Car.cs" />
+              <file name="Cars.Models.csproj" />
+              <file name="City.cs" />
+              <file name="Dealer.cs" />
+              <file name="Manufacturer.cs" />
+              <file name="packages.config" />
+              <file name="Settings.StyleCop" />
+              <file name="TransmissionType.cs" />
+            </dir>
+            <dir name="Cars.Searcher">
+              <dir name="Properties">
+                <file name="AssemblyInfo.cs" />
+              </dir>
+              <file name="App.config" />
+              <file name="Car.cs" />
+              <file name="Cars.Searcher.csproj" />
+              <file name="Dealer.cs" />
+              <file name="packages.config" />
+              <file name="Program.cs" />
+              <file name="Query.cs" />
+              <file name="Settings.StyleCop" />
+              <file name="WhereClause.cs" />
+              <file name="WhereType.cs" />
+            </dir>
+            <file name="Cars.sln" />
+          </dir>
+          <dir name="Problem 7 Answers">
+            <file name="Result0.xml" />
+            <file name="Result1.xml" />
+            <file name="Result2.xml" />
+            <file name="Result3.xml" />
+            <file name="Result4.xml" />
+            <file name="Result5.xml" />
+            <file name="Result6.xml" />
+            <file name="Result7.xml" />
+          </dir>
+          <file name="Documentation.txt" />
+        </dir>
+        <dir name="Description">
+          <dir name="Data.Json.Files">
+            <file name="data.0.json" />
+            <file name="data.1.json" />
+            <file name="data.2.json" />
+            <file name="data.3.json" />
+            <file name="data.4.json" />
+          </dir>
+          <file name="Databases-Practical-Exam-September-2014.docx" />
+          <file name="Documentation.txt" />
+          <file name="Queries.xml" />
+        </dir>
+      </dir>
+    </dir>
+    <file name=".gitignore" />
+    <file name="Course program for 2015.md" />
+    <file name="LICENSE" />
+    <file name="README.md" />
+  </dir>
+</directory>

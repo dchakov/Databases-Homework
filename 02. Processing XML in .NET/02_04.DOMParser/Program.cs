@@ -62,15 +62,19 @@ namespace XMLProcessingIn.NET
             }
 
             // 4.Using the DOM parser write a program to delete from catalog.xml all albums having price > 20.
+
             Console.WriteLine(new string('-', 25));
             foreach (XmlElement node in rootNode.SelectNodes("album"))
             {
-                if (Decimal.Parse(node["price"].InnerText) > (decimal)20)
+                var price = Decimal.Parse(node["price"].InnerText);
+                var filterPrivce = (decimal)20;
+                if (price > filterPrivce)
                 {
                     rootNode.RemoveChild(node);
                 }
             }
-            Console.WriteLine("writing in catalogNew.xml");
+
+            Console.WriteLine("writing in catalogNew.xml....");
             catalog.Save("../../catalogNew.xml");
         }
     }
