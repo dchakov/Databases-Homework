@@ -1,7 +1,7 @@
 ## Database Systems - Overview
 ### _Homework_
 
-1.  #### What database models do you know?
+1. #### What database models do you know?
 	
 	- **Hierarchial(tree)**	is a data model in which the data is organized into a tree-like structure. The data is stored as records which are connected to one another through links. A record is a collection of fields, with each field containing only one value. The entity type of a record defines which fields the record contains.
 	- **Network/graph** is a database model conceived as a flexible way of representing objects and their relationships. Its distinguishing feature is that the schema, viewed as a graph in which object types are nodes and relationship types are arcs, is not restricted to being a hierarchy or lattice.
@@ -10,7 +10,7 @@
 
 
 
-1.  #### Which are the main functions performed by a Relational Database Management System (RDBMS)?
+1. #### Which are the main functions performed by a Relational Database Management System (RDBMS)?
 Relational database management systems (RDBMS) support the relational (table-oriented) data model. The schema of a table (relation schema) is defined by the table name and a fixed number of attributes with fixed data types. A record (entity) corresponds to a row in the table and consists of the values of each attribute. A relation thus consists of a set of uniform records.
 Manage data stored in tables.Implement creating deleting tables and relationship between them.Adding, changing, deleting,searching and retrieving of data stored in the tables.
 
