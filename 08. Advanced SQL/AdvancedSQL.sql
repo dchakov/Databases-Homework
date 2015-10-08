@@ -107,39 +107,172 @@ WHERE LEN(Lastname) = 5
 
 --14.	Write a SQL query to display the current date and time in the following format "`day.month.year hour:minutes:seconds:milliseconds`".
 --	*	Search in Google to find how to format dates in SQL Server.
+
+SELECT FORMAT(GETDATE(),'dd.MM.yyyy HH:mm:ss:f') AS [Current Time]
+
 --15.	Write a SQL statement to create a table `Users`. Users should have username, password, full name and last login time.
 --	*	Choose appropriate data types for the table fields. Define a primary key column with a primary key constraint.
 --	*	Define the primary key column as identity to facilitate inserting records.
 --	*	Define unique constraint to avoid repeating usernames.
 --	*	Define a check constraint to ensure the password is at least 5 characters long.
+
+CREATE TABLE Users (
+	UserID int IDENTITY,
+	UserName nvarchar(100) NOT NULL,
+	[Password] nvarchar(100) NOT NULL,
+	FullName nvarchar(100),
+	LastLogIn datetime,
+	CONSTRAINT PK_Users PRIMARY KEY(UserID),
+	CONSTRAINT UK_UserName UNIQUE(UserName),
+	CONSTRAINT Check_Password CHECK(LEN([Password])>=5)
+)
+
 --16.	Write a SQL statement to create a view that displays the users from the `Users` table that have been in the system today.
 --	*	Test if the view works correctly.
+
+CREATE VIEW [Users in system today] AS
+SELECT * 
+FROM Users
+WHERE FORMAT(GETDATE(),'dd.MM.yyyy') = FORMAT(LastLogIn,'dd.MM.yyyy')
+
 --17.	Write a SQL statement to create a table `Groups`. Groups should have unique name (use unique constraint).
 --	*	Define primary key and identity column.
+
+CREATE TABLE Groups (
+	GroupID int IDENTITY,
+	GroupName nvarchar(100) NOT NULL,
+	CONSTRAINT PK_Groups PRIMARY KEY(GroupID),
+	CONSTRAINT UK_GroupName UNIQUE(GroupName)
+)
+
 --18.	Write a SQL statement to add a column `GroupID` to the table `Users`.
 --	*	Fill some data in this new column and as well in the `Groups table.
 --	*	Write a SQL statement to add a foreign key constraint between tables `Users` and `Groups` tables.
+
+ALTER TABLE Users ADD GroupID int
+
+ALTER TABLE Users
+ADD CONSTRAINT FK_Users_Groups
+FOREIGN KEY(GroupID)
+REFERENCES Groups(GroupID)
+
 --19.	Write SQL statements to insert several records in the `Users` and `Groups` tables.
+
+INSERT INTO Users(UserName, Password, FullName, LastLogIn, GroupID)
+ VALUES
+ ('Doncho','345632','Doncho Minkov','10.09.2015', 3),
+ ('Koki','345632','Koki Kostov','09.09.2015', 3),
+ ('Pesho','345632','Pesho Minkov','10.10.2015', 2),
+ ('Tencho','345632','Tencho Gudev','08.08.2015', 2)
+
+ INSERT INTO Groups(GroupName)
+ VALUES
+ ('UI&DOM'),
+ ('C#1'),
+ ('C#2'),
+ ('OOP')
+
 --20.	Write SQL statements to update some of the records in the `Users` and `Groups` tables.
+
+UPDATE Users
+SET LastLogIn = GETDATE()
+WHERE UserName = 'asen'
+
+UPDATE Groups
+SET GroupName = 'JSApplication'
+WHERE GroupID = 3 
+
 --21.	Write SQL statements to delete some of the records from the `Users` and `Groups` tables.
+
+DELETE FROM Users
+WHERE UserName = 'Pesho'
+
+DELETE FROM Groups
+WHERE GroupID = 7
+
+
 --22.	Write SQL statements to insert in the `Users` table the names of all employees from the `Employees` table.
 --	*	Combine the first and last names as a full name.
 --	*	For username use the first letter of the first name + the last name (in lowercase).
 --	*	Use the same for the password, and `NULL` for last login time.
+
+INSERT INTO Users(UserName, Password, FullName, LastLogIn)
+SELECT LEFT(FirstName, 3) + LOWER(LastName),
+		LEFT(FirstName, 3) + LOWER(LastName),
+		FirstName + ' ' + LastName,
+		NULL
+FROM Employees
+
 --23.	Write a SQL statement that changes the password to `NULL` for all users that have not been in the system since 10.03.2010.
+
+UPDATE Users
+SET [Password] = NULL
+WHERE LastLogIn < CONVERT(DATETIME, '2010-03-10')
+
 --24.	Write a SQL statement that deletes all users without passwords (`NULL` password).
+
+DELETE FROM Users
+WHERE Password IS NULL
+
 --25.	Write a SQL query to display the average employee salary by department and job title.
+
+SELECT d.Name AS Department, e.JobTitle, AVG(e.Salary) AS [Average Salary]
+FROM Employees e
+	INNER JOIN Departments d
+	ON e.DepartmentID = d.DepartmentID
+GROUP BY d.Name, e.JobTitle
+ORDER BY d.Name
+
 --26.	Write a SQL query to display the minimal employee salary by department and job title along with the name of some of the employees that take it.
+
+SELECT d.Name AS Department, e.JobTitle, MIN(e.FirstName +' '+ e.LastName) AS [FullName], MIN(e.Salary) AS [Min Salary]
+FROM Employees e
+	INNER JOIN Departments d
+	ON e.DepartmentID = d.DepartmentID
+GROUP BY d.Name, e.JobTitle
+ORDER BY d.Name
+
 --27.	Write a SQL query to display the town where maximal number of employees work.
+
+SELECT TOP 1 t.Name, COUNT(*) AS EmplCounter
+FROM Employees e
+JOIN Addresses a
+ON a.AddressID = e.AddressID
+JOIN Towns t
+ON a.TownID = t.TownID
+GROUP BY t.Name
+ORDER BY EmplCounter DESC
+
 --28.	Write a SQL query to display the number of managers from each town.
+
+SELECT t.Name, COUNT(e.ManagerID) AS ManagerCounter
+FROM Employees e
+JOIN Employees m
+ON e.ManagerID = m.EmployeeID
+JOIN Addresses a
+ON a.AddressID = e.AddressID
+JOIN Towns t
+ON a.TownID = t.TownID
+GROUP BY t.Name
+
 --29.	Write a SQL to create table `WorkHours` to store work reports for each employee (employee id, date, task, hours, comments).
 --	*	Don't forget to define  identity, primary key and appropriate foreign key. 
 --	*	Issue few SQL statements to insert, update and delete of some data in the table.
 --	*	Define a table `WorkHoursLogs` to track all changes in the `WorkHours` table with triggers.
 --		*	For each change keep the old record data, the new record data and the command (insert / update / delete).
+
+
 --30.	Start a database transaction, delete all employees from the '`Sales`' department along with all dependent records from the pother tables.
 --	*	At the end rollback the transaction.
+
 --31.	Start a database transaction and drop the table `EmployeesProjects`.
 --	*	Now how you could restore back the lost table data?
+
+BEGIN TRAN
+
+DELETE FROM EmployeesProjects;
+
+ROLLBACK TRAN
+
 --32.	Find how to use temporary tables in SQL Server.
 --	*	Using temporary tables backup all records from `EmployeesProjects` and restore them back after dropping and re-creating the table.
