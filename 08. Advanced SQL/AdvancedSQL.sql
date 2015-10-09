@@ -245,12 +245,12 @@ ORDER BY EmplCounter DESC
 
 --28.	Write a SQL query to display the number of managers from each town.
 
-SELECT t.Name, COUNT(e.ManagerID) AS ManagerCounter
+SELECT t.Name, COUNT(DISTINCT e.ManagerID) AS ManagerCounter
 FROM Employees e
 JOIN Employees m
 ON e.ManagerID = m.EmployeeID
 JOIN Addresses a
-ON a.AddressID = e.AddressID
+ON a.AddressID = m.AddressID
 JOIN Towns t
 ON a.TownID = t.TownID
 GROUP BY t.Name
@@ -261,18 +261,119 @@ GROUP BY t.Name
 --	*	Define a table `WorkHoursLogs` to track all changes in the `WorkHours` table with triggers.
 --		*	For each change keep the old record data, the new record data and the command (insert / update / delete).
 
+CREATE TABLE WorkHours (
+	WorkHourID int IDENTITY,
+	EmployeeID int NOT NULL,
+	[Date] datetime,
+	Task nvarchar(100),
+	[Hours] int,
+	Comments nvarchar(500),
+	CONSTRAINT PK_WorkHours PRIMARY KEY(WorkHourID),
+	CONSTRAINT FK_WorkHourss_Employees FOREIGN KEY(EmployeeID)
+	REFERENCES Employees(EmployeeID)
+)
+GO
+
+INSERT INTO WorkHours(EmployeeID, [Date], Task, [Hours], Comments)
+VALUES
+(2, GETDATE(),'Read SQL', 8, 'Database homework'),
+(3, GETDATE(),'Learn AppHarbour', 12, 'JS aplication'),
+(4, GETDATE(),'Learn1 AppHarbour1', 10, 'JS aplication1')
+
+UPDATE WorkHours
+SET [Hours] = 5
+WHERE EmployeeID = 2
+
+DELETE FROM WorkHours
+WHERE Task='Read SQL'
+
+CREATE TABLE WorkHoursLogs (
+	WorkHoursLogID int IDENTITY,
+	WorkHourID int,
+	EmployeeID int NOT NULL,
+	[Date] datetime,
+	Task nvarchar(100),
+	[Hours] int,
+	Comments nvarchar(500),
+	Command nvarchar(30) NOT NULL,
+	CONSTRAINT PK_WorkHoursLogs PRIMARY KEY(WorkHoursLogID),
+	CONSTRAINT FK_WorkHoursLogs_Employees FOREIGN KEY(EmployeeID)
+	REFERENCES Employees(EmployeeID)
+)
+GO
+
+CREATE TRIGGER TR_WorhoursInsert ON WorkHours FOR INSERT
+AS
+INSERT INTO WorkHoursLogs(WorkHourID, EmployeeID, [Date], Task, [Hours], Comments, Command)
+SELECT  WorkHourID, EmployeeID, [Date], Task, [Hours], Comments, 'INSERT'
+FROM inserted
+GO
+
+CREATE TRIGGER TR_WorhoursUpdate ON WorkHours FOR UPDATE
+AS
+INSERT INTO WorkHoursLogs(WorkHourID, EmployeeID, [Date], Task, [Hours], Comments, Command)
+SELECT WorkHourID, EmployeeID, [Date], Task, [Hours], Comments, 'UPDATE'
+FROM inserted
+GO
+
+CREATE TRIGGER TR_WorhoursDelete ON WorkHours FOR DELETE
+AS
+INSERT INTO WorkHoursLogs(WorkHourID, EmployeeID, [Date], Task, [Hours], Comments, Command)
+SELECT WorkHourID, EmployeeID, [Date], Task, [Hours], Comments, 'DELETE'
+FROM deleted
+GO
+
+DELETE FROM WorkHoursLogs
+
+INSERT INTO WorkHours(EmployeeID, [Date], Task, [Hours], Comments)
+VALUES
+(10, GETDATE(),'Test 1', 2, 'Test insert'),
+(11, GETDATE(),'Test 2', 4, 'Test insert')
+
+UPDATE WorkHours
+SET Task = 'Almost finished'
+WHERE EmployeeID = 11
+
+DELETE FROM WorkHours
+WHERE Task= 'Test 1'
 
 --30.	Start a database transaction, delete all employees from the '`Sales`' department along with all dependent records from the pother tables.
 --	*	At the end rollback the transaction.
+
+BEGIN TRAN
+
+ALTER TABLE Departments
+DROP CONSTRAINT FK_Departments_Employees
+
+DELETE FROM Employees
+WHERE DepartmentID =
+	(SELECT DepartmentID FROM Departments
+	WHERE Name = 'Sales')
+
+ROLLBACK TRAN
 
 --31.	Start a database transaction and drop the table `EmployeesProjects`.
 --	*	Now how you could restore back the lost table data?
 
 BEGIN TRAN
 
-DELETE FROM EmployeesProjects;
+DROP TABLE EmployeesProjects;
 
 ROLLBACK TRAN
 
 --32.	Find how to use temporary tables in SQL Server.
 --	*	Using temporary tables backup all records from `EmployeesProjects` and restore them back after dropping and re-creating the table.
+
+BEGIN TRAN
+
+CREATE TABLE #TempTable (EmployeeID int, ProjectID int)
+SELECT EmployeeID, ProjectID
+FROM EmployeesProjects
+
+DROP TABLE EmployeesProjects;
+
+CREATE TABLE EmployeesProjects(EmployeeID int, ProjectID int)
+SELECT EmployeeID, ProjectID
+FROM #TempTable
+
+ROLLBACK TRAN
