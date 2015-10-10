@@ -162,7 +162,7 @@ SELECT e.FirstName + ' ' + e.LastName AS [Employee], m.Name AS Department, e.Hir
 FROM Employees e, Departments m
 WHERE e.DepartmentID = m.DepartmentID AND
 	(m.Name = 'Sales' OR m.Name = 'Finance') AND
-		(e.HireDate > '1995' AND e.HireDate < '2005')
+		(e.HireDate > '1995-01-01' AND e.HireDate < '2005-12-31')
 
 
 SELECT e.FirstName + ' ' + e.LastName AS [Employee], e.DepartmentID, e.HireDate
