@@ -40,7 +40,69 @@
                 RetrieveImagesFromCategories(dbConnection);
                 Console.WriteLine("Stored JPG files in folder pictures");
                 Console.WriteLine(new string('-', 30));
+
+                // 8.Write a program that reads a string from the console and finds all products that contain this string.
+                // Ensure you handle correctly characters like ', %, ", \ and _.
+                // http://www.orafaq.com/faq/how_does_one_escape_special_characters_when_writing_sql_queries
+
+                Console.Write("Please enter some product:");
+                string input = Console.ReadLine();
+                Console.WriteLine(new string('-', 30));
+                Console.WriteLine("Products that contain: {0}", input);
+                SearchAllProductsThatContainString(dbConnection, input);
             }
+        }
+
+        private static void SearchAllProductsThatContainString(SqlConnection dbConnection, string input)
+        {
+            input = EscapeInputString(input);
+
+            string sqlStringCommand = string.Format(@"
+                    SELECT ProductName
+                    FROM Products
+                    WHERE ProductName LIKE '%{0}%'", input);
+
+            SqlCommand allProducts = new SqlCommand(sqlStringCommand, dbConnection);
+            SqlDataReader reader = allProducts.ExecuteReader();
+            using (reader)
+            {
+                while (reader.Read())
+                {
+                    string productName = (string)reader["ProductName"];
+                    Console.WriteLine("{0}", productName);
+                }
+            }
+        }
+
+        private static string EscapeInputString(string input)
+        {
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] == '\'')
+                {
+                    input = input.Substring(0, i) + "'" + input.Substring(i, input.Length - i);
+                    i++;
+                }
+
+                if (input[i] == '_')
+                {
+                    input = input.Substring(0, i) + "/" + input.Substring(i, input.Length - i);
+                    i++;
+                }
+
+                if (input[i] == '%')
+                {
+                    input = input.Substring(0, i) + "\\" + input.Substring(i, input.Length - i);
+                    i++;
+                }
+
+                if (input[i] == '&')
+                {
+                    input = input.Substring(0, i) + "\\" + input.Substring(i, input.Length - i);
+                    i++;
+                }
+            }
+            return input;
         }
 
         private static void RetrieveImagesFromCategories(SqlConnection dbConnection)

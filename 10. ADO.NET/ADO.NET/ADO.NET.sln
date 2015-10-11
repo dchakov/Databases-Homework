@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RetrieveNumberOfRowsFromDB", "01.RetrieveNumberOfRowsFromDB\01.RetrieveNumberOfRowsFromDB.csproj", "{D18D2493-4762-4254-8C58-BBB27C881EA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-05.08.RetrieveNumberOfRowsFromDB", "01.RetrieveNumberOfRowsFromDB\01-05.08.RetrieveNumberOfRowsFromDB.csproj", "{D18D2493-4762-4254-8C58-BBB27C881EA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-08.ExcelOLEDB", "06-08.ExcelOLEDB\06-08.ExcelOLEDB.csproj", "{01538B78-46A1-45C8-A378-418749C83DAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D18D2493-4762-4254-8C58-BBB27C881EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18D2493-4762-4254-8C58-BBB27C881EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D18D2493-4762-4254-8C58-BBB27C881EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01538B78-46A1-45C8-A378-418749C83DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01538B78-46A1-45C8-A378-418749C83DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01538B78-46A1-45C8-A378-418749C83DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01538B78-46A1-45C8-A378-418749C83DAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
