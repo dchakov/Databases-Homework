@@ -1,0 +1,157 @@
+﻿namespace _01.RetrieveNumberOfRowsFromDB
+{
+    using System;
+    using System.Data.SqlClient;
+    using System.IO;
+
+    public class Program
+    {
+        internal static void Main()
+        {
+            SqlConnection dbConnection = new SqlConnection("Server=.; " +
+                "Database=Northwind;" +
+                "Integrated Security=true");
+
+            dbConnection.Open();
+
+            using (dbConnection)
+            {
+                // 1.Write a program that retrieves from the Northwind sample database in MS SQL Server the number of rows in the Categories table.
+                RetrieveNumberOfRows(dbConnection);
+                Console.WriteLine(new string('-', 30));
+
+                // 2.Write a program that retrieves the name and description of all categories in the Northwind DB.
+                RetrieveNameAndDescription(dbConnection);
+                Console.WriteLine(new string('-', 30));
+
+                // 3.Write a program that retrieves from the Northwind database all product categories and the names of the products in each category.
+                // Can you do this with a single SQL query (with table join)?
+                RetrieveAllProductCategoriesAndProducts(dbConnection);
+                Console.WriteLine(new string('-', 30));
+
+                // 4.Write a method that adds a new product in the products table in the Northwind database.
+                // Use a parameterized SQL command.
+                int newProduct = AddNewProductToDBTable(dbConnection, "Some", 1, 1, "5x10", 15.00M, 0, 0, 0, true);
+                Console.WriteLine("Inserted new product with Id: {0}", newProduct);
+                Console.WriteLine(new string('-', 30));
+
+                // 5.Write a program that retrieves the images for all categories in the Northwind database and stores them as JPG files in the file system.
+                RetrieveImagesFromCategories(dbConnection);
+                Console.WriteLine("Stored JPG files in folder pictures");
+                Console.WriteLine(new string('-', 30));
+            }
+        }
+
+        private static void RetrieveImagesFromCategories(SqlConnection dbConnection)
+        {
+            string sqlStringCommand =
+                "SELECT CategoryName, Picture FROM Categories";
+
+            SqlCommand allPictures = new SqlCommand(sqlStringCommand, dbConnection);
+            SqlDataReader reader = allPictures.ExecuteReader();
+            using (reader)
+            {
+                while (reader.Read())
+                {
+                    string categoryName = (string)reader["CategoryName"];
+                    categoryName = categoryName.Replace('/', '_');
+                    byte[] fileContent = (byte[])reader["Picture"];
+                    string fileName = string.Format(@"..\..\images\{0}.jpg", categoryName);
+                    WriteBinaryFile(fileName, fileContent);
+                }
+            }
+        }
+
+        private static void WriteBinaryFile(string fileName, byte[] fileContents)
+        {
+            FileStream stream = File.OpenWrite(fileName);
+            using (stream)
+            {
+                stream.Write(fileContents, 0, fileContents.Length);
+            }
+        }
+
+        private static int AddNewProductToDBTable(SqlConnection dbConnection,
+            string ProductName,
+            int SupplierID,
+            int CategoryID,
+            string QuantityPerUnit,
+            decimal UnitPrice,
+            int UnitsInStock,
+            int UnitsOnOrder,
+            int ReorderLevel,
+            bool Discontinued)
+        {
+            string sqlStringCommand = @"
+                    INSERT INTO Products(ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder,ReorderLevel, Discontinued)
+                    VALUES (@productName, @supplierID, @categoryID, @quantityPerUnit, @nitPrice, @unitsInStock, @unitsOnOrder, @reorderLevel, @discontinued)";
+
+            SqlCommand insertProduct = new SqlCommand(sqlStringCommand, dbConnection);
+            insertProduct.Parameters.AddWithValue("@productName", ProductName);
+            insertProduct.Parameters.AddWithValue("@supplierID", SupplierID);
+            insertProduct.Parameters.AddWithValue("@categoryID", CategoryID);
+            insertProduct.Parameters.AddWithValue("@quantityPerUnit", QuantityPerUnit);
+            insertProduct.Parameters.AddWithValue("@nitPrice", UnitPrice);
+            insertProduct.Parameters.AddWithValue("@unitsInStock", UnitsInStock);
+            insertProduct.Parameters.AddWithValue("@unitsOnOrder", UnitsOnOrder);
+            insertProduct.Parameters.AddWithValue("@reorderLevel", ReorderLevel);
+            insertProduct.Parameters.AddWithValue("@discontinued", Discontinued);
+
+            insertProduct.ExecuteNonQuery();
+
+            SqlCommand cmdSelectIdentity = new SqlCommand("SELECT @@Identity", dbConnection);
+            int insertedRecordId = (int)(decimal)cmdSelectIdentity.ExecuteScalar();
+            return insertedRecordId;
+        }
+
+        private static void RetrieveAllProductCategoriesAndProducts(SqlConnection dbConnection)
+        {
+            string sqlStringCommand = @"
+                    SELECT c.CategoryName, p.ProductName
+                    FROM Categories c
+                    JOIN Products p
+                    ON c.CategoryID=p.CategoryID
+                    ORDER BY c.CategoryName";
+
+            SqlCommand allProductCategories = new SqlCommand(sqlStringCommand, dbConnection);
+            SqlDataReader reader = allProductCategories.ExecuteReader();
+            using (reader)
+            {
+                while (reader.Read())
+                {
+                    string categoryName = (string)reader["CategoryName"];
+                    string productName = (string)reader["ProductName"];
+                    Console.WriteLine("{0} -> {1}", categoryName, productName);
+                }
+            }
+        }
+
+        private static void RetrieveNameAndDescription(SqlConnection dbConnection)
+        {
+            string sqlStringCommand =
+                "SELECT [CategoryName],[Description] FROM Categories";
+
+            SqlCommand allNames = new SqlCommand(sqlStringCommand, dbConnection);
+            SqlDataReader reader = allNames.ExecuteReader();
+            using (reader)
+            {
+                while (reader.Read())
+                {
+                    string categoryName = (string)reader["CategoryName"];
+                    string description = (string)reader["Description"];
+                    Console.WriteLine("{0} -> {1}", categoryName, description);
+                }
+            }
+        }
+
+        private static void RetrieveNumberOfRows(SqlConnection dbConnection)
+        {
+            string sqlStringCommand =
+                "SELECT COUNT(*) FROM Categories";
+
+            SqlCommand cmdCount = new SqlCommand(sqlStringCommand, dbConnection);
+            int rowsCount = (int)cmdCount.ExecuteScalar();
+            Console.WriteLine("Rows count: {0}", rowsCount);
+        }
+    }
+}
