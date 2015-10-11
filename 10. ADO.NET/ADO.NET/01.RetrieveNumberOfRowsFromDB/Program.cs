@@ -3,6 +3,7 @@
     using System;
     using System.Data.SqlClient;
     using System.IO;
+    using System.Drawing;
 
     public class Program
     {
@@ -67,7 +68,7 @@
             FileStream stream = File.OpenWrite(fileName);
             using (stream)
             {
-                stream.Write(fileContents, 0, fileContents.Length);
+                stream.Write(fileContents, 78, fileContents.Length - 78);
             }
         }
 
