@@ -38,14 +38,14 @@
 
                 // 5.Write a program that retrieves the images for all categories in the Northwind database and stores them as JPG files in the file system.
                 RetrieveImagesFromCategories(dbConnection);
-                Console.WriteLine("Stored JPG files in folder pictures");
+                Console.WriteLine("Stored JPG files in folder images");
                 Console.WriteLine(new string('-', 30));
 
                 // 8.Write a program that reads a string from the console and finds all products that contain this string.
                 // Ensure you handle correctly characters like ', %, ", \ and _.
                 // http://www.orafaq.com/faq/how_does_one_escape_special_characters_when_writing_sql_queries
 
-                Console.Write("Please enter some product:");
+                Console.Write("Please enter text to search product:");
                 string input = Console.ReadLine();
                 Console.WriteLine(new string('-', 30));
                 Console.WriteLine("Products that contain: {0}", input);

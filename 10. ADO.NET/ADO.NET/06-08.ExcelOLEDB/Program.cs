@@ -3,7 +3,7 @@
     using System;
     using System.Data.OleDb;
 
-    class Program
+    public class Program
     {
         static void Main()
         {
