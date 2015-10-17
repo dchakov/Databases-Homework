@@ -9,6 +9,10 @@
     {
         static void Main()
         {
+            // 7.Try to open two different data contexts and perform concurrent changes on the same records.
+            // What will happen at SaveChanges() ?
+            // How to deal with it ?
+
             using (var northwind1 = new NorthwindEntities())
             {
                 using (var northwind2 = new NorthwindEntities())
