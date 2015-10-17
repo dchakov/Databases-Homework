@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseClone", "DatabaseCl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DifferentDataContext", "DifferentDataContext\DifferentDataContext.csproj", "{0C520B8C-73A1-445F-8261-232FC97C772B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeInh", "EmployeeInh\EmployeeInh.csproj", "{BDB4E85C-C72F-459F-8EB5-B827E4A7419E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0C520B8C-73A1-445F-8261-232FC97C772B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C520B8C-73A1-445F-8261-232FC97C772B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C520B8C-73A1-445F-8261-232FC97C772B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB4E85C-C72F-459F-8EB5-B827E4A7419E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB4E85C-C72F-459F-8EB5-B827E4A7419E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB4E85C-C72F-459F-8EB5-B827E4A7419E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB4E85C-C72F-459F-8EB5-B827E4A7419E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

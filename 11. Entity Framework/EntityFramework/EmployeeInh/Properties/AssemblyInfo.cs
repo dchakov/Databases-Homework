@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DataBaseClone")]
+[assembly: AssemblyTitle("EmployeeInh")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DataBaseClone")]
+[assembly: AssemblyProduct("EmployeeInh")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f07ade74-abd8-4cfc-a257-1b32b8694756")]
+[assembly: Guid("bdb4e85c-c72f-459f-8eb5-b827e4a7419e")]
 
 // Version information for an assembly consists of the following four values:
 //
