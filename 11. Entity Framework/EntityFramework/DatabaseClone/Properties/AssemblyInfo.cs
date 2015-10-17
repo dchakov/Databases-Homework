@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EntityFramework.Client.Tests")]
+[assembly: AssemblyTitle("DatabaseClone")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EntityFramework.Client.Tests")]
+[assembly: AssemblyProduct("DatabaseClone")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("70dcd1f8-40f8-4545-8e87-1e7a35d07a0b")]
+[assembly: Guid("f35dfbdb-6309-4bfd-8f16-77be94c25b46")]
 
 // Version information for an assembly consists of the following four values:
 //

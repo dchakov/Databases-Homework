@@ -39,7 +39,7 @@
 
         private static void FindAllSalesBySpecifiedRegionAndPeriod(string region, DateTime startDate, DateTime endDate)
         {
-            using (NorthwindEntities northwindEntities = new NorthwindEntities())
+            using (var northwindEntities = new NorthwindEntities())
             {
                 var sales = northwindEntities
                 .Order_Details

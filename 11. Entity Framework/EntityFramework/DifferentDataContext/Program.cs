@@ -1,0 +1,43 @@
+﻿namespace DifferentDataContext
+{
+    using EntityFrameworkModels;
+    using System;
+    using System.Linq;
+    using System.Data.Entity;
+
+    class Program
+    {
+        static void Main()
+        {
+            using (var northwind1 = new NorthwindEntities())
+            {
+                using (var northwind2 = new NorthwindEntities())
+                {
+                    Console.WriteLine(new string('-', 35));
+                    Console.WriteLine("First context");
+                    Console.WriteLine(new string('-', 35));
+                    var person1 = northwind1.Employees.FirstOrDefault();
+                    Console.WriteLine("Initial:{0}", person1.FirstName);
+                    person1.FirstName = "XAXAXA";
+                    Console.WriteLine("Changed:{0}", person1.FirstName);
+                    
+                    // Change by Entity state Unchanged Modified Detached
+                    var dbEntry = northwind1.Entry(person1);
+                    dbEntry.State = EntityState.Unchanged;
+                    northwind1.SaveChanges();
+
+                    Console.WriteLine(new string('-', 35));
+                    Console.WriteLine("Second context");
+                    Console.WriteLine(new string('-', 35));
+                    var person2 = northwind2.Employees.FirstOrDefault();
+                    Console.WriteLine("Initial:{0}", person2.FirstName);
+                    person2.FirstName = "UHAHAH";
+                    Console.WriteLine("Changed:{0}", person2.FirstName);
+                    
+                    
+                    northwind2.SaveChanges();
+                }
+            }
+        }
+    }
+}
