@@ -1,15 +1,17 @@
-﻿using System.Collections.Generic;
-using System.Data.Linq;
-
-namespace EntityFrameworkModels
+﻿namespace EntityFrameworkModels
 {
+    using System.Collections.Generic;
+    using System.Data.Linq;
+
     public partial class Employee
     {
-        public ICollection<Territory> TerritoryProperty
+        public EntitySet<Territory> TerritoryProperty
         {
             get
             {
-                return this.Territories;
+                EntitySet<Territory> territory = new EntitySet<Territory>();
+                territory.AddRange(this.Territories);
+                return territory;
             }
         }
     }
