@@ -31,6 +31,15 @@
                 Materials = "www.telerik"
             };
 
+            var homework = new Homework
+            {
+                Content = "Done",
+                TimeSent = DateTime.Now,
+                StudentId = 2,
+                CourseId = 2
+            };
+
+            db.Homeworks.Add(homework);
             student.Courses.Add(course);
             db.Students.Add(student);
             db.Courses.Add(course);
