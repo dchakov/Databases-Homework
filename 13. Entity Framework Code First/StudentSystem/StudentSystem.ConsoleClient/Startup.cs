@@ -11,9 +11,7 @@
     {
         public static void Main()
         {
-            Database.SetInitializer(
-                new MigrateDatabaseToLatestVersion
-                <StudentSystemContext, Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentSystemContext, Configuration>());
 
             var db = new StudentSystemContext();
 
